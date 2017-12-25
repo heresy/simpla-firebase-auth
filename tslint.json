@@ -12,14 +12,8 @@
     "variable-name": [true, "ban-keywords"],
     "no-inner-declarations": [true, "function"],
     "indent": [true, "spaces", 2],
-    "no-unused-variable": [true]
-  },
-  "jsRules": {
-    "no-console": [true, "log"],
-    "no-duplicate-imports": true,
-    "no-duplicate-variable": true,
-    "semicolon": [true],
-    "variable-name": [true, "ban-keywords"],
-    "no-inner-declarations": [true, "function"]
+    "no-unused-variable": [true],
+    "arrow-parens": true,
+    "only-arrow-functions": [true, "allow-declarations", "allow-named-functions"]
   }
 }
