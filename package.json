@@ -1,0 +1,45 @@
+{
+  "name": "simpla-firebase-auth",
+  "version": "1.0.0",
+  "description": "Firebase authentication for Simpla CMS",
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/heresy/simpla-firebase-auth.git"
+  },
+  "main": "dist/auth.js",
+  "scripts": {
+    "build": "node_modules/.bin/tsc -p tsconfig.json",
+    "watch": "node_modules/.bin/tsc -p tsconfig.json -w",
+    "lint": "node_modules/.bin/tslint -c tslint.json 'src/**/*.ts' --project tsconfig.json -t stylish || echo",
+    "lint:fix": "node_modules/.bin/tslint -c tslint.json 'src/**/*.ts' --fix --project tsconfig.json -t stylish || echo "
+  },
+  "files" : ["dist"],
+  "keywords": [
+    "Simpla",
+    "Firebase auth"
+  ],
+  "contributors": [
+    {
+      "name": "Srinivas K",
+      "email": "kpsrinivas@heresy.in"
+    },
+    {
+      "name": "Jayaram Kurapati",
+      "url": "https://www.jayaramk.in",
+      "email": "reachme@jayaramk.in"
+    }
+  ],
+  "author": "Heresy Infotech",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^0.53.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-uglify": "^2.0.1",
+    "tslint": "^5.8.0",
+    "tslint-eslint-rules": "^4.1.1",
+    "typescript": "^2.6.2",
+    "vrsource-tslint-rules": "^5.8.0"
+  }
+}
